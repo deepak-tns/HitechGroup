@@ -1,0 +1,300 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_relative"
+
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+
+    tools:context="net.hitechgroupindia.hitechgroup.Fragment.HomeFragment">
+
+
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_above="@+id/relative_bottom"
+        android:id="@+id/contentScroller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_homeimg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+            <TextView
+
+                android:id="@+id/tv_animation"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+</FrameLayout>
+        <GridView
+           android:listSelector="@drawable/gridview_item_highlited"
+            android:drawSelectorOnTop="true"
+            android:layout_marginTop="10dp"
+            android:numColumns="auto_fit"
+            android:gravity="center"
+            android:columnWidth="100dp"
+            android:stretchMode="columnWidth"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:id="@+id/gridview_home_fragment" />
+
+
+        <View
+            android:background="@android:color/holo_orange_dark"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"/>
+   <!-- <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:text="@string/text_aboutus_homefragment"
+        android:id="@+id/tv_home_1111"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />-->
+
+<LinearLayout
+
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="#6D883E"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+<!--
+        <Button
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:background="@drawable/border_button"
+            android:layout_gravity="center"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AboutUs"
+            android:id="@+id/button" />-->
+
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/logo2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/white"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+
+
+            android:orientation="horizontal"
+            android:id="@+id/linear_fffffffffffffff"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:text="@string/text_aboutus_homefragment2_linear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+     <!--       <ImageView
+                android:id="@+id/top_Image"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/pagetitlebg" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Find Us"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/location" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ADDRESS"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B-2/4, I.P. Tower, Vibhuti Khnad,
+Gomti Nagar, Lucknow. ( U.P. )" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/phone" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PHONE"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(0522) 301 0808," />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(+91) 857 388 5000" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/emailicon" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text= "info@hitechgroupindia.com,"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+</ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relative_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/themecolor"
+            android:gravity="center"
+            android:text="Contact Us"
+            android:id="@+id/btn_contactus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    </RelativeLayout>
